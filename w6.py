@@ -46,10 +46,11 @@ def getWeekName(weekday:int) -> str:
 
 
 while True:
-    year, month, day = map(int, input("enter date of birth YYYY/MM/DD: ").split("/"))
-    now = datetime(year,month,day)
-    weekday = getWeekName(now.weekday())
+    year, month, day = map(int, input("enter date of birth YYYY/MM/DD: ").split("/")) #use multiple input in one line wiht the sparetor /
+    now = datetime(year,month,day) #use the module datetime date to calculate the weekday 0 to 6
+    weekday = getWeekName(now.weekday()) #uses the function getweekname inorder to solve nameweekday 0: monday - 6: sunday
     print(f"The day you were born was {weekday}")
-    re =input("press any butten to restart: ")
+    re =input("press any Enter butten to restart: ")
     os.system("cls")
-    
+
+
