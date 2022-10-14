@@ -1,19 +1,32 @@
-class Robot:
-    def introduce_self(self):
-        print(f"My name is {self.name}")
+from typing import Type
 
-r1 = Robot()
-r1.name = "tom"
-r1.color = "red"
-r1.weight = 30
 
-r2 = Robot()
-r2.name = "jerry"
-r2.color = "blue"
-r2.weight = 18 
+class Point:
+    def __init__(self, x:int = 0, y:int = 0):
+        self.__x = x
+        self.__y = y
 
-r1.introduce_self()
-r2.introduce_self()
+    def Move(self, xDelta:int = 0, yDelta:int = 0):
+        self.__x = self.__x + xDelta
+        self.__y = self.__y + yDelta
+
+
+    def Reset(self):
+        self.__x = 0
+        self.__y = 0
+    
+    def GetX(self) -> int:
+        return self.__x
+
+    def GetY(self) -> int:
+        return self.__y
+
+    def Add(self, otherPoint:type[Point]):
+        self.__x = self.__x + otherPoint.GetX()
+        self.__y = self.__y + otherPoint.GetY()
+
     
 
 
+def CoolFunction(tal:int) -> int:
+    return tal * 123
