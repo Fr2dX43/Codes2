@@ -8,7 +8,7 @@ class Person:
     
     def GreetAsRovearSpark(self) -> str:
         result = ""
-        text = "hi" + self.__Namn
+        text = "hi " + self.__Namn
         for letter in text:
             if self.isvokal(letter.lower):
                 result += letter
