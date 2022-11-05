@@ -10,7 +10,7 @@ class Person:
     def GetChrismasPresentTotal(self):
         sum = 0
         for person in self.__Presents:
-            sum = sum + person.GetPrice()
+            sum += person.GetPrice()
         return sum
 
     def GetName(self):
