@@ -6,14 +6,14 @@ class Point:
         self.__x = x
         self.__y = y
 
-    def move(self, xDelta:int = 0, yDelta:int = 0):
+    def move(self, xDelta:int = 0, yDelta:int = 0): #om man inte anger något då är det 0
         self.__x += xDelta
         self.__y += yDelta
 
     def Reset(self): #anropas till main.py
         self.__x = 0
         self.__y = 0
-    
+        
     def GetX(self) -> int:
         return self.__x
 

@@ -15,8 +15,8 @@ s = Stefan.GreetAsRovearSpark()
 print(s)
 
 
-c = circle(12)
-d = circle(2342)
+c = circle(1)
+d = circle(2)
 omkrets = c.Circumference()
 print(f"Omkrets {omkrets}")
 print(f"Area {c.Area()}")
@@ -38,7 +38,7 @@ mario.Reset()
 # om VK_RIGHT + VK_DOWN
 mario.Move(xDelta = 1,yDelta= 1) #method xDelta är nameparamiter
 
-luigi = Point(50,50) #flyttar luigi som object i point
+luigi = Point(50,50) #flyttar variabel luigi som object i point
 # om VK_RIGHT + VK_DOWN
 luigi.Move(xDelta = 2,yDelta= 1) #method
 
