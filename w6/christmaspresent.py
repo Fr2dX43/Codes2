@@ -5,4 +5,7 @@ class ChristmasPresent:
     
     def GetPrice(self):
         return self.__Price
+    
+    def GetName(self):
+        return self.__Name
 

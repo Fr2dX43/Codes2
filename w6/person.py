@@ -1,16 +1,17 @@
 class Person:
-    def __init__(self, name:str): #anvönd konstruktor på tentan
+    def __init__(self, name:str):
         self.__Name = name
         self.__Presents = []
 
-    def AddChrismasPresent(self, present):
+    def AddChristmasPresent(self, present):
+        append.json
         self.__Presents.append(present)
 
 
-    def GetChrismasPresentTotal(self):
+    def GetTotal(self):
         sum = 0
-        for person in self.__Presents:
-            sum += person.GetPrice()
+        for p in self.__Presents:
+            sum = sum + p.GetPrice()
         return sum
 
     def GetName(self):
